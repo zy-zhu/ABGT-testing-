@@ -1,0 +1,659 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/all.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/fixed.css"> 
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+	</head>
+<body data-spy="scroll" data-target="#navbarResponsive">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">AGBT</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+	  
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  <ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+			  <a class="nav-link" href="#">Home</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">AR</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Survey</a>
+			</li>
+		  </ul>
+		</div>
+	</nav>
+	<br><br>
+<div class="Survey" style="color:white;">
+		<div class="container">
+		
+
+		<center>
+		<div class="upper">
+			<div class="head">
+				<h2 style="color: white;">Survey</h2>
+			</div>
+			<h3 style="color: white; margin-top: 20px;">The purpose of the survey is to aid the audience members in developing their “<span style="color: red;">CLIMATE IDENTITY</span>” and provide them with personalized climate action recommendations.</h3>
+			<h3 style="color: white; margin-top: 20px;">On our end, through the survey we will learn which forms sustainable interventions audience members are most receptive to participation in, specifically in the sectors of <span style="color:red;">transportation emissions, waste, and energy.</span></h3>
+		</div>
+		<hr style="background-color: grey; margin-top: 2rem;">
+		<div class="quizTitle" style="margin-top: 2rem;">
+			<h3 style="text-align: left; font-weight: bold;color: white;">Climate Identities Quiz</h3>
+		</div>
+		<div class="upper-survay">
+			<h3 style="margin-top: 2rem;">We’d like to get to know how you feel about three core areas of climate change: energy, waste & emissions.<br>
+			For each of the following questions, please rate how you feel about the prompt in relation to energy, emissions & waste.
+			</h3>
+		</div>
+		<h3 style="color: red;">Let's Get Started</h3>
+		<div class="mouse_scroll">
+
+			<div>
+				<span class="m_scroll_arrows unu"></span>
+				<span class="m_scroll_arrows doi"></span>
+				<span class="m_scroll_arrows trei"></span>
+			</div>
+		</div>
+		<div class="survay-body" style="margin-top: 2rem; text-align: left;">
+			<form action="/calculateScore" method="post">
+				<!-- Question 1 -->
+				<h3>1. How much effort do you put into personally reducing your ______?</h3>
+				<div class="container">
+					<div class="row">
+						<div class="col-2">
+							
+						</div>
+						<div class="col-2">
+							<label>No Effort</label><br>
+						</div>
+						<div class="col-2">
+							<label>Willing to Learn</label><br>
+						</div>
+						<div class="col-2">
+							<label>Mode<wbr>rate Effort</label><br>
+						</div>
+						<div class="col-2">
+							<label>Great Effort</label><br>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-2">
+							<label for="EnergyConsumption1">Energy Consum<wbr>-ption</label>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="EnergyConsumption1NoEffort" name="Question1-1" value="1" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="EnergyConsumption1WillingToLearn" name="Question1-1" value="2" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="EnergyConsumption1ModerateEffort" name="Question1-1" value="3" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="EnergyConsumption1GreatEffort" name="Question1-1" value="4" required>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-2">
+							<label for="WasteProduction1">Waste Production</label>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="WasteProduction1NoEffort" name="Question1-2" value="1" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="WasteProduction1WillingToLearn" name="Question1-2" value="2" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="WasteProduction1ModerateEffort" name="Question1-2" value="3" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="WasteProduction1GreatEffort" name="Question1-2" value="4" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-2">
+							<label for="TransportationEmissions1">Transpor<wbr>-tation Emissions</label>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="TransportationEmissions1NoEffort" name="Question1-3" value="1" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="TransportationEmissions1WillingToLearn" name="Question1-3" value="2" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="TransportationEmissions1ModerateEffort" name="Question1-3" value="3" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="TransportationEmissions1GreatEffort" name="Question1-3" value="4" required>
+						</div>
+					</div>
+				</div>
+				<br>
+				<!-- Question 1 -->
+				<!-- Question 2 -->
+				<h3>2. How knowledgeable would you say you are about the effect that _____ has on the environment?</h3>
+				<div class="container">
+					<div class="row">
+						<div class="col-2">
+							
+						</div>
+						<div class="col-2">
+							<label>No Knowle<wbr>dge</label><br>
+						</div>
+						<div class="col-2">
+							<label>Willing to Learn</label><br>
+						</div>
+						<div class="col-2">
+							<label>Modera<wbr>tely Knowledge<wbr>able</label><br>
+						</div>
+						<div class="col-2">
+							<label>Greatly Knowledge<wbr>able</label><br>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-2">
+							<label for="EnergyConsumption2">Energy Consum<wbr>-ption</label>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="EnergyConsumption2NoKnowledge" name="Question2-1" value="1" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="EnergyConsumption2WillingToLearn" name="Question2-1" value="2" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="EnergyConsumption2ModeratelyKnowledgeable" name="Question2-1" value="3" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="EnergyConsumption2GreatlyKnowledgeable" name="Question2-1" value="4" required>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-2">
+							<label for="WasteProduction2">Waste Production</label>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="WasteProduction2NoKnowledge" name="Question2-2" value="1" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="WasteProduction2WillingToLearn" name="Question2-2" value="2" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="WasteProduction2ModeratelyKnowledgeable" name="Question2-2" value="3" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="WasteProduction2GreatlyKnowledgeable" name="Question2-2" value="4" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-2">
+							<label for="TransportationEmissions2">Transpor<wbr>-tation Emissions</label>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="TransportationEmissions2NoKnowledge" name="Question2-3" value="1" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="TransportationEmissions2WillingToLearn" name="Question2-3" value="2" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="TransportationEmissions2ModeratelyKnowledgeable" name="Question2-3" value="3" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="TransportationEmissions2GreatlyKnowledgeable" name="Question2-3" value="4" required>
+						</div>
+					</div>
+				</div>
+				<br>
+				<!-- Question 2 -->
+				<!-- Question 3 -->
+				<h3>3. How important is the issue of _____ reduction to you?</h3>
+				<div class="container">
+					<div class="row">
+						<div class="col-2">
+							
+						</div>
+						<div class="col-2">
+							<label>Need More Info</label><br>
+						</div>
+						<div class="col-2">
+							<label>Not<wbr> Very Impor<wbr>tant</label><br>
+						</div>
+						<div class="col-2">
+							<label>Modera<wbr>tely Important</label><br>
+						</div>
+						<div class="col-2">
+							<label>Greatly Important</label><br>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-2">
+							<label for="EnergyConsumption3">Energy Consum<wbr>-ption</label>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="EnergyConsumption3NeedMoreInfo" name="Question3-1" value="1" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="EnergyConsumption3NotVeryImportant" name="Question3-1" value="2" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="EnergyConsumption3ModeratelyImportant" name="Question3-1" value="3" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="EnergyConsumption3GreatlyImportant" name="Question3-1" value="4" required>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-2">
+							<label for="WasteProduction3">Waste Production</label>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="WasteProduction3NeedMoreInfo" name="Question3-2" value="1" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="WasteProduction3NotVeryImportant" name="Question3-2" value="2" required>  
+						</div>
+						<div class="col-2">
+							<input type="radio" id="WasteProduction3ModeratelyImportant" name="Question3-2" value="3" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="WasteProduction3GreatlyImportant" name="Question3-2" value="4" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-2">
+							<label for="TransportationEmissions3">Transpor<wbr>-tation Emissions</label>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="TransportationEmissions3NeedMoreInfo" name="Question3-3" value="1" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="TransportationEmissions3NotVeryImportant" name="Question3-3" value="2" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="TransportationEmissions3ModeratelyImportant" name="Question3-3" value="3" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="TransportationEmissions3GreatlyImportant" name="Question3-3" value="4" required>
+						</div>
+					</div>
+				</div>
+				<br>
+				<!-- Question 3 -->
+				<!-- Question 4 -->
+				<h3>4. How worried are you about the impact of _____ on the environment?</h3>
+				<div class="container">
+					<div class="row">
+						<div class="col-2">
+							
+						</div>
+						<div class="col-2">
+							<label>Need More Info</label><br>
+						</div>
+						<div class="col-2">
+							<label>Not Very Worried</label><br>
+						</div>
+						<div class="col-2">
+							<label>Modera<wbr>tely Worried</label><br>
+						</div>
+						<div class="col-2">
+							<label>Greatly Worried</label><br>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-2">
+							<label for="EnergyConsumption4">Energy Consum<wbr>-ption</label>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="EnergyConsumption4NeedMoreInfo" name="Question4-1" value="1" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="EnergyConsumption4NotVeryWorried" name="Question4-1" value="2" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="EnergyConsumption4ModeratelyWorried" name="Question4-1" value="3" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="EnergyConsumption4GreatlyWorried" name="Question4-1" value="4" required>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-2">
+							<label for="WasteProduction4">Waste Production</label>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="WasteProduction4NeedMoreInfo" name="Question4-2" value="1" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="WasteProduction4NotVeryWorried" name="Question4-2" value="2" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="WasteProduction4ModeratelyWorried" name="Question4-2" value="3" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="WasteProduction4GreatlyWorried" name="Question4-2" value="4" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-2">
+							<label for="TransportationEmissions4">Transpor<wbr>-tation Emissions</label>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="TransportationEmissions4NeedMoreInfo" name="Question4-3" value="1" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="TransportationEmissions4NotVeryWorried" name="Question4-3" value="2" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="TransportationEmissions4ModeratelyWorried" name="Question4-3" value="3" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="TransportationEmissions4GreatlyWorried" name="Question4-3" value="4" required>
+						</div>
+					</div>
+				</div>
+				<br>
+				<!-- Question 4 -->
+				<!-- Question 5 -->
+				<h3>5. How harmful do you think _____  is to humanity?</h3>
+				<div class="container">
+					<div class="row">
+						<div class="col-2">
+							
+						</div>
+						<div class="col-2">
+							<label>Need More Info</label><br>
+						</div>
+						<div class="col-2">
+							<label>Not Very Harmful</label><br>
+						</div>
+						<div class="col-2">
+							<label>Modera<wbr>tely Harmfu</label><br>
+						</div>
+						<div class="col-2">
+							<label>Greatly Harmful</label><br>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-2">
+							<label for="EnergyConsumption5">Energy Consum<wbr>-ption</label>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="EnergyConsumption5NeedMoreInfo" name="Question5-1" value="1" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="EnergyConsumption5NotVeryHarmful" name="Question5-1" value="2" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="EnergyConsumption5ModeratelyHarmful" name="Question5-1" value="3" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="EnergyConsumption5GreatlyHarmful" name="Question5-1" value="4" required>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-2">
+							<label for="WasteProduction5">Waste Production</label>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="WasteProduction5NeedMoreInfo" name="Question5-2" value="1" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="WasteProduction5NotVeryHarmful" name="Question5-2" value="2" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="WasteProduction5ModeratelyHarmful" name="Question5-2" value="3" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="WasteProduction5GreatlyHarmful" name="Question5-2" value="4" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-2">
+							<label for="TransportationEmissions5">Transpor<wbr>-tation Emissions</label>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="TransportationEmissions5NeedMoreInfo" name="Question5-3" value="1" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="TransportationEmissions5NotVeryHarmful" name="Question5-3" value="2" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="TransportationEmissions5ModeratelyHarmful" name="Question5-3" value="3" required>
+						</div>
+						<div class="col-2">
+							<input type="radio" id="TransportationEmissions5GreatlyHarmful" name="Question5-3" value="4" required>
+						</div>
+					</div>
+				</div>
+				<br>
+				<!-- Question 5 -->
+				<!-- Question 6 -->
+				<h3>6. How did you get to the Gorge? Please check all that apply.</h3>
+				<div class="container">
+					<input type="checkbox" id="Plane" name="Question6" value="PLANE" onclick="PlaneFunction()">
+					<label for="Plane">Plane</label><br>
+					<div class="SubQuesions" id="SubQuesions" style="display: none; margin: 12px; margin-bottom: 25px;">
+						<label for="lang" style="color: red; font-size: 20px;">How many hours was your flight?</label><br>
+					    <select name="languages" id="lang">
+					        <option value="1">1</option>
+					        <option value="2">2</option>
+					        <option value="3">3</option>
+					        <option value="4">4</option>
+					        <option value="5">5</option>
+					        <option value="6">6</option>
+					        <option value="7">7</option>
+					        <option value="8">8</option>
+					        <option value="9">9</option>
+					        <option value="10">10</option>
+					        <option value="11">11</option>
+					        <option value="12">12</option>
+					        <option value="12+">12+</option>
+					    </select>
+					    <br>
+						<h3 style="color: red; font-size: 20px;">How did you get to the airport from your house?</h3>
+						<div class="container">
+							<input type="radio" id="Car" name="SecondSubQuestion" value="CAR">
+							<label for="Car">Car</label><br>
+							<input type="radio" id="Bus" name="SecondSubQuestion" value="BUS">
+							<label for="Bus">Bus</label><br>
+							<input type="radio" id="Train" name="SecondSubQuestion" value="Train">
+							<label for="Train">Train</label><br>
+							<input type="radio" id="Other" name="SecondSubQuestion" value="OTHER">
+							<label for="Other">Other</label><br>
+						</div>
+						<label for="lang" style="color: red; font-size: 20px;">How long was that trip to the airport?</label><br>
+					    <select name="languages" id="lang">
+					        <option value="1">1</option>
+					        <option value="2">2</option>
+					        <option value="3">3</option>
+					        <option value="4">4</option>
+					        <option value="5">5</option>
+					        <option value="6">6</option>
+					        <option value="7">7</option>
+					        <option value="8">8</option>
+					        <option value="9">9</option>
+					        <option value="10">10</option>
+					        <option value="11">11</option>
+					        <option value="12">12</option>
+					        <option value="12+">12+</option>
+					    </select>	
+					</div>
+					
+					<input type="checkbox" id="Train" name="Question6" value="TRAIN">
+					<label for="Train">Train</label><br>
+					<input type="checkbox" id="Automobile" name="Question6" value="AUTOMOBILE">
+					<label for="Automobile">Automobile</label><br>
+					<input type="checkbox" id="WeekenderShuttle" name="Question6" value="WEEKENDERSHUTTLE">
+					<label for="WeekenderShuttle">Weekender Shuttle</label><br>
+					<input type="checkbox" id="Bus" name="Question6" value="BUS">
+					<label for="Bus">Bus</label><br>
+					<input type="checkbox" id="Other2" name="Question6" value="OTHER2" onclick="Other2Function()">
+					<label for="Other2">Other</label>
+					<input type="text" id="lname2" name="lname2"style="display:none; border: none; outline: none;"><br>
+				</div>
+				<br>
+				<!-- Question 6 -->
+				<!-- Question 7 -->
+				<h3>7. Did you bring anything to the festival you would dispose of/leave behind? Please check all that apply.</h3>
+				<div class="container">
+					<input type="checkbox" id="Cans" name="Question7" value="CANS">
+					<label for="Cans">Cans</label><br>
+					<input type="checkbox" id="Bottles" name="Question7" value="BOTTLES">
+					<label for="Bottles">Bottles</label><br>
+					<input type="checkbox" id="Paper" name="Question7" value="PAPER">
+					<label for="Paper">Paper</label><br>
+					<input type="checkbox" id="PlasticBags" name="Question7" value="PLASTICBAGS">
+					<label for="PlasticBags">Plastic Bags</label><br>
+					<input type="checkbox" id="FoodPackaging" name="Question7" value="FOODPACKAGING">
+					<label for="FoodPackaging">Food Packaging</label><br>
+					<input type="checkbox" id="Sanitaryproducts" name="Question7" value="SANITARYPRODUCTS">
+					<label for="SanitaryProducts">Sanitary products</label><br>
+					<input type="checkbox" id="Utensils" name="Question7" value="UTENSILS">
+					<label for="Utensils">Utensils</label><br>
+					<input type="checkbox" id="Campingequipment" name="Question7" value="CAMPINGEQUIPMENT">
+					<label for="Campingequipment">Camping equipment</label><br>
+					<input type="checkbox" id="Other3" name="Question7" value="OTHER3" onclick="Other3Function()">
+					<label for="Other3">Other</label>
+					<input type="text" id="lname3" name="lname3"style="display:none; border: none; outline: none;"><br>
+				</div>
+				<br>
+				<!-- Question 7 -->
+				<!-- Question 8 -->
+				<h3>8. How frequently do you attend live music events?</h3>
+				<div class="container">
+					<input type="checkbox" id="MoreThanOnePerWeek" name="Question8" value="MORETHANONEPERWEEK">
+					<label for="MoreThanOnePerWeek">More than once per week</label><br>
+					<input type="checkbox" id="OncePerWeek" name="Question8" value="ONEPERWEEK">
+					<label for="OncePerWeek">Once per week</label><br>
+					<input type="checkbox" id="AFewTimesaMonth" name="Question8" value="AFEWTIMESAMONTH">
+					<label for="AFewTimesaMonth">A few times a month</label><br>
+					<input type="checkbox" id="OncePerMonth" name="Question8" value="ONCEPERMONTH">
+					<label for="OncePerMonth">Once per month</label><br>
+					<input type="checkbox" id="MoreThanSixTimesPerYear" name="Question8" value="MORETHANSIXTIMESPERYEAR">
+					<label for="MoreThanSixTimesPerYear">More than six times per year</label><br>
+					<input type="checkbox" id="FewerThanFiveTimesPerYear" name="Question8" value="FEWERTHANSIXTIMESPERYEAR">
+					<label for="FewerThanFiveTimesPerYear">Fewer than five times per year</label><br>
+					<input type="checkbox" id="AlmostNever" name="Question8" value="ALMOSTNEVER">
+					<label for="AlmostNever">Almost never</label><br>
+				</div>
+				<br>
+				<!-- Question 8 -->
+				<!-- Question 9 -->
+				<p class="page-header">How much do you enjoy science incorporated into arts and entertainment, such as programming between MIT and Anjunabeats?<br>(1 not at all - 10 greatly enjoy)</p>
+			      <div class="chart-scale">
+			        <button type="button" class="btn btn-scale btn-scale-desc-1">1</button>
+			        <button type="button" class="btn btn-scale btn-scale-desc-2">2</button>
+			        <button type="button" class="btn btn-scale btn-scale-desc-3">3</button>
+			        <button type="button" class="btn btn-scale btn-scale-desc-4">4</button>
+			        <button type="button" class="btn btn-scale btn-scale-desc-5">5</button>
+			        <button type="button" class="btn btn-scale btn-scale-desc-6">6</button>
+			        <button type="button" class="btn btn-scale btn-scale-desc-7">7</button>
+			        <button type="button" class="btn btn-scale btn-scale-desc-8">8</button>
+			        <button type="button" class="btn btn-scale btn-scale-desc-9">9</button>
+			        <button type="button" class="btn btn-scale btn-scale-desc-10">10</button>
+			      </div>
+				<!-- Question 9 -->
+				<br>
+				<br>
+				      								
+				<!-- Submt -->
+				<br>
+				<br>
+				<center>
+					<button class="btn submitBtn" type="submit">Submit</button>
+				</center>
+				<!-- Submt -->			
+			</form>
+<form action="/sendm" method="post" id="form">
+		<center>
+			<div id="{{conid}}" class="modal fade">
+				    <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Your Output Will be:</h5>
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						      </div>
+						      <div class="modal-body" style="color: black;">
+						        <img src="../static/{{filename}}" width="200px" height="160px">
+						        <h4 class="mt-3" style="color: red;">{{job}}</h4>
+						      </div>
+							<div class="row">
+							        	 <div class="col-3">
+							        	 	<input type="radio" id="Popup1" name="Popup1-1" value="{{filename[:-4]}}__volunteer">
+										<label for="Popup1" style="color:black">volunteer</label><br>
+
+							        	 	
+							        	 </div>
+							        	 <div class="col-3">
+							        	 	<input type="radio" id="Popup2" name="Popup1-1" value="{{filename[:-4]}}__donate">
+							        	 	<label for="Popup2" style="color:black">donate</label><br>
+							        	 </div>
+							        	 <div class="col-3">
+							        	 	<input type="radio" id="Popup3" name="Popup1-1" value="{{filename[:-4]}}__behaviorChange">
+							        	 	<label for="Popup3" style="color:black">behavior Change</label><br>
+							        	 </div>
+							        	 <div class="col-3">
+							        	 	<input type="radio" id="Popup4" name="Popup1-1" value="{{filename[:-4]}}__education">
+							        	 	<label for="Popup4" style="color:black">>education</label><br>
+							        	 </div>
+							        </div>
+
+						      <div class="modal-footer">
+						        <button type="submit" class="btn btn-primary">Submit</button>
+						        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						        
+						      </div>
+						    </div>
+						  </div>
+				</div>
+		</center>
+	</form>	
+		</div>
+		</div>
+		</center>
+
+	</div>
+
+
+
+	
+
+</div>
+<script>
+const modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<footer>
+	All Rights Reserved MIT Climate Machine 2022 &copy;
+</footer>
+
+
+<script type="text/javascript" src="../static/js/jquery-3.5.0.min.js"></script>
+<script type="text/javascript" src="../static/js/popper.js"></script>
+<script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../static/js/jquery.nicescroll.min.js"></script>
+<script type="text/javascript" src="../static/js/main.js"></script>	
+</body>
+</html>
