@@ -6,7 +6,30 @@ body {
         min-height: 100vh;
         position: relative;
     }
-    
+
+    /* Background */
+.image{
+  position: fixed;
+  z-index: 99;
+
+} 
+.position1{
+  left: 0px;
+top: 150px;
+}   
+.position2{
+  left: 411px;
+  top: 300px;}
+
+.position3{
+  left: 797px;
+  top: 500px;
+}   
+
+.position4{
+right: 0;
+  top: 200px;
+}  
     /* For ALL */
     .titlea{
       position: fixed;
@@ -34,17 +57,17 @@ body {
     
     .background{
       position: fixed;
-      width: 5740px;
+      width: 15000Px;
       height: 579px;
       left: 0px;
       top: 27px;
       font-family: 'Akzidenz-Grotesk BQ';
       font-style: normal;
-      font-weight: 700;
+      font-weight: 100;
       font-size: 500px;
       line-height: 579px;
       /* identical to box height */
-      z-index: 0;
+      z-index: -999;
       color: #000000;
       }
       .yellowrec{
@@ -59,7 +82,7 @@ body {
     
       .marquee{
         text-transform: uppercase;
-        animation: animate 50s linear infinite;
+        animation: animate 100s linear infinite;
         user-select:none;
     
       }
@@ -70,7 +93,7 @@ body {
       }
     }
       
-    
+
     .share{
     position: fixed;
     right:5px;
@@ -79,7 +102,6 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 3vw;
-    line-height: 59px;
     text-decoration-line: line-through;
     color: #000000;
     }
@@ -113,17 +135,17 @@ bottom: 0;
 color:#F7CB45;
     }
 
-    ul{
+    .navbox ul{
         z-index: 999;
     }
-    li{
+    .navbox li{
         list-style-type: none; 
         color:#000000;
         text-decoration: none;
         height: min-content;
         font-size: 7vw;
     }
-    li:hover{
+   .navbox li:hover{
         text-decoration: line-through;
     }
     
@@ -140,7 +162,6 @@ color: #000000;
     }
     .navtitle span:hover{ 
         float:right; 
-
         text-decoration: line-through;
     }
 
@@ -168,18 +189,52 @@ color: #000000;
 }
 
 
-
-
-
-
 /* Footer */
 
 .footer{
-    position: absolute;
+    position: fixed;
     font-family: 'Heiti SC';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
 left: 5px;
 bottom: 0;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    /* background-color: lightblue; */
+  }
+
+  .abgt{
+    opacity: 0;
+  }
+
+  .enter{
+    font-size: 7vh;
+    bottom: 30vh;
+  }
+  .titlea{
+    font-size: 3.5vh;
+  }
+.yellowrec{
+  position: absolute;
+  width: 51px;
+  height: 23px;
+  left: 0px;
+  top: 28px;
+}
+.navtitle span{
+  font-size: 7vh;
+}
+.navtitle{
+  line-height: 7vh;
+
+}
+.footer{
+  font-size: 10px;
+}
+
 }

@@ -1,71 +1,65 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Survey</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../static/css/all.css">
 	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
 	<link rel="stylesheet" type="text/css" href="../static/css/fixed.css"> 
+	<link rel="stylesheet" type="text/css" href="../static/css/style2.css"> 
+	<link rel="stylesheet" type="text/css" href="../static/css/quiz-style.css"> 
 	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 	</head>
 <body data-spy="scroll" data-target="#navbarResponsive">
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="#">AGBT</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		  <span class="navbar-toggler-icon"></span>
-		</button>
-	  
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		  <ul class="navbar-nav mr-auto">
-			<li class="nav-item active">
-			  <a class="nav-link" href="#">Home</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="#">AR</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Survey</a>
-			</li>
-		  </ul>
-		</div>
-	</nav>
-	<br><br>
-<div class="Survey" style="color:white;">
-		<div class="container">
+	<div>
+		<div  class="titlea"><a href="#">MIT CLIMATE MACHINE</a></div>
+			<div class="yellowrec"></div>
+			  <ul class="navbox navtitle">
+				<li>
+				  <a href="#"><span>AR</span></a>
+				</li>
+				<li >
+				  <a href="#"><span class="linethrough">QUIZ</span></a>
+				</li>
+				<li>
+					<a href="#"><span>INFO</span></a>
+				</li>
+			  </ul>
+			</div>
+
+			<div class="background marquee">
+				CLIMATE WASTE CO2 EMISSION ENERGY, WATER 
+				</div>
+
+<div class="quiz-container">
 		
 
-		<center>
+
+			<div class="quizbox">
 		<div class="upper">
-			<div class="head">
-				<h2 style="color: white;">Survey</h2>
-			</div>
-			<h3 style="color: white; margin-top: 20px;">The purpose of the survey is to aid the audience members in developing their “<span style="color: red;">CLIMATE IDENTITY</span>” and provide them with personalized climate action recommendations.</h3>
-			<h3 style="color: white; margin-top: 20px;">On our end, through the survey we will learn which forms sustainable interventions audience members are most receptive to participation in, specifically in the sectors of <span style="color:red;">transportation emissions, waste, and energy.</span></h3>
+
+			<h3>Hi, Welcome to MIT Climate Machine Climate Identity Quiz. 😆 The purpose of this quiz is to aid the audience members in developing their “<span class="emphasis">CLIMATE IDENTITY</span>” and provide them with personalized climate action recommendations.</h3>
+			<h3>On our end, through the survey we will learn which forms sustainable interventions audience members are most receptive to participation in, specifically in the sectors of <span class="emphasis">transportation emissions, waste, and energy.</span></h3>
 		</div>
 		<hr style="background-color: grey; margin-top: 2rem;">
 		<div class="quizTitle" style="margin-top: 2rem;">
-			<h3 style="text-align: left; font-weight: bold;color: white;">Climate Identities Quiz</h3>
+			<h3 style="text-align: left; font-weight: bold;color: black;">Climate Identities Quiz</h3>
 		</div>
 		<div class="upper-survay">
 			<h3 style="margin-top: 2rem;">We’d like to get to know how you feel about three core areas of climate change: energy, waste & emissions.<br>
 			For each of the following questions, please rate how you feel about the prompt in relation to energy, emissions & waste.
 			</h3>
 		</div>
-		<h3 style="color: red;">Let's Get Started</h3>
-		<div class="mouse_scroll">
+		<h3>Let's Get Started 🌎</h3>
+	
 
-			<div>
-				<span class="m_scroll_arrows unu"></span>
-				<span class="m_scroll_arrows doi"></span>
-				<span class="m_scroll_arrows trei"></span>
-			</div>
-		</div>
+	</div>
 		<div class="survay-body" style="margin-top: 2rem; text-align: left;">
 			<form action="/calculateScore" method="post">
 				<!-- Question 1 -->
+				<div class="quizbox">
 				<h3>1. How much effort do you put into personally reducing your ______?</h3>
 				<div class="container">
 					<div class="row">
@@ -138,9 +132,11 @@
 						</div>
 					</div>
 				</div>
+				</div>
 				<br>
 				<!-- Question 1 -->
 				<!-- Question 2 -->
+				<div class="quizbox">
 				<h3>2. How knowledgeable would you say you are about the effect that _____ has on the environment?</h3>
 				<div class="container">
 					<div class="row">
@@ -213,9 +209,12 @@
 						</div>
 					</div>
 				</div>
+				</div>
+
 				<br>
 				<!-- Question 2 -->
 				<!-- Question 3 -->
+				<div class="quizbox">
 				<h3>3. How important is the issue of _____ reduction to you?</h3>
 				<div class="container">
 					<div class="row">
@@ -288,9 +287,13 @@
 						</div>
 					</div>
 				</div>
+				</div>
+
 				<br>
 				<!-- Question 3 -->
 				<!-- Question 4 -->
+
+						<div class="quizbox">
 				<h3>4. How worried are you about the impact of _____ on the environment?</h3>
 				<div class="container">
 					<div class="row">
@@ -363,9 +366,13 @@
 						</div>
 					</div>
 				</div>
+			</div>
 				<br>
+					
 				<!-- Question 4 -->
 				<!-- Question 5 -->
+				
+				<div class="quizbox">
 				<h3>5. How harmful do you think _____  is to humanity?</h3>
 				<div class="container">
 					<div class="row">
@@ -438,15 +445,19 @@
 						</div>
 					</div>
 				</div>
+				</div>
 				<br>
+
+	
 				<!-- Question 5 -->
 				<!-- Question 6 -->
+				<div class="quizbox">
 				<h3>6. How did you get to the Gorge? Please check all that apply.</h3>
 				<div class="container">
 					<input type="checkbox" id="Plane" name="Question6" value="PLANE" onclick="PlaneFunction()">
 					<label for="Plane">Plane</label><br>
 					<div class="SubQuesions" id="SubQuesions" style="display: none; margin: 12px; margin-bottom: 25px;">
-						<label for="lang" style="color: red; font-size: 20px;">How many hours was your flight?</label><br>
+						<label for="lang" style="font-size: 20px;">How many hours was your flight?</label><br>
 					    <select name="languages" id="lang">
 					        <option value="1">1</option>
 					        <option value="2">2</option>
@@ -463,7 +474,7 @@
 					        <option value="12+">12+</option>
 					    </select>
 					    <br>
-						<h3 style="color: red; font-size: 20px;">How did you get to the airport from your house?</h3>
+						<h3 style="font-size: 20px;">How did you get to the airport from your house?</h3>
 						<div class="container">
 							<input type="radio" id="Car" name="SecondSubQuestion" value="CAR">
 							<label for="Car">Car</label><br>
@@ -474,7 +485,7 @@
 							<input type="radio" id="Other" name="SecondSubQuestion" value="OTHER">
 							<label for="Other">Other</label><br>
 						</div>
-						<label for="lang" style="color: red; font-size: 20px;">How long was that trip to the airport?</label><br>
+						<label for="lang" style="font-size: 20px;">How long was that trip to the airport?</label><br>
 					    <select name="languages" id="lang">
 					        <option value="1">1</option>
 					        <option value="2">2</option>
@@ -504,9 +515,14 @@
 					<label for="Other2">Other</label>
 					<input type="text" id="lname2" name="lname2"style="display:none; border: none; outline: none;"><br>
 				</div>
+				</div>
+				</div>
+
+
 				<br>
 				<!-- Question 6 -->
 				<!-- Question 7 -->
+				<div class="quizbox">
 				<h3>7. Did you bring anything to the festival you would dispose of/leave behind? Please check all that apply.</h3>
 				<div class="container">
 					<input type="checkbox" id="Cans" name="Question7" value="CANS">
@@ -529,9 +545,14 @@
 					<label for="Other3">Other</label>
 					<input type="text" id="lname3" name="lname3"style="display:none; border: none; outline: none;"><br>
 				</div>
+				</div>
+	
+
+
 				<br>
 				<!-- Question 7 -->
 				<!-- Question 8 -->
+				<div class="quizbox">
 				<h3>8. How frequently do you attend live music events?</h3>
 				<div class="container">
 					<input type="checkbox" id="MoreThanOnePerWeek" name="Question8" value="MORETHANONEPERWEEK">
@@ -549,9 +570,11 @@
 					<input type="checkbox" id="AlmostNever" name="Question8" value="ALMOSTNEVER">
 					<label for="AlmostNever">Almost never</label><br>
 				</div>
+				</div>
 				<br>
 				<!-- Question 8 -->
 				<!-- Question 9 -->
+				<div class="quizbox">
 				<p class="page-header">How much do you enjoy science incorporated into arts and entertainment, such as programming between MIT and Anjunabeats?<br>(1 not at all - 10 greatly enjoy)</p>
 			      <div class="chart-scale">
 			        <button type="button" class="btn btn-scale btn-scale-desc-1">1</button>
@@ -566,15 +589,16 @@
 			        <button type="button" class="btn btn-scale btn-scale-desc-10">10</button>
 			      </div>
 				<!-- Question 9 -->
+				</div>
 				<br>
 				<br>
 				      								
-				<!-- Submt -->
-				<br>
-				<br>
+				<!-- Submt -->				
 				<center>
-					<button class="btn submitBtn" type="submit">Submit</button>
+					<button class="btn submitBtn" type="submit">SUBMIT</button>
 				</center>
+
+				<div class="break"></div>
 				<!-- Submt -->			
 			</form>
 <form action="/sendm" method="post" id="form">
@@ -590,7 +614,7 @@
 						      </div>
 						      <div class="modal-body" style="color: black;">
 						        <img src="../static/{{filename}}" width="200px" height="160px">
-						        <h4 class="mt-3" style="color: red;">{{job}}</h4>
+						        <h4 class="mt-3">{{job}}</h4>
 						      </div>
 							<div class="row">
 							        	 <div class="col-3">
@@ -627,13 +651,16 @@
 		</div>
 		</center>
 
-	</div>
 
-
-
-	
 
 </div>
+
+	<div class="footer">
+		All Rights Reserved MIT Climate Machine 2022 &copy;
+	</div>
+	
+</div>
+
 <script>
 const modal = document.getElementById('id01');
 
@@ -645,9 +672,6 @@ window.onclick = function(event) {
 }
 </script>
 
-<footer>
-	All Rights Reserved MIT Climate Machine 2022 &copy;
-</footer>
 
 
 <script type="text/javascript" src="../static/js/jquery-3.5.0.min.js"></script>

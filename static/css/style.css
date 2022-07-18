@@ -144,7 +144,6 @@
 /* Start dropdown */
 .dropdown label {
      font-size: 20px;
-     color: red;
    }
 .dropdown select {
         margin-bottom: 10px;
@@ -160,7 +159,7 @@
   width: 20rem;
 }
 .row .col-2:first-child{
-    color: red;
+
     font-size: 15px;
 }
 .row input {
@@ -279,17 +278,22 @@
 /* End Scale */
 /* Start Submit BTN */
 .submitBtn {
-  font-size: 20px;
+  width: 20vw;
+  height: 10vh;
+  font-size: 30px;
   border-radius: 20px;
-  background-color: white;
-  color: black;
-  border: none;
-  outline: none;
-  transition: 0.5s;
-}
-.submitBtn:hover {
   background-color: black;
   color: white;
+  transition: 0.5s;
+  font-family: 'Akzidenz-Grotesk BQ';
+}
+.submitBtn:hover {
+  background-color:red;
+  border: black;
+  border-color: black;
+  border-width: 5px;
+  color: white;
+  outline: black;
 
 }
 /* End Submit BTN */
