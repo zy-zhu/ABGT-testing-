@@ -46,6 +46,10 @@
     <div class="load">Loading..</div>
   </div>
 
+  <a-assets>
+    <video id="Embrace_Landscape" autoplay loop="true" src="static/video/Embrace_Landscape.mp4"></video>
+  </a-assets>
+
   <a-scene
     vr-mode-ui="enabled: false;"
     renderer="logarithmicDepthBuffer: true; precision: medium;"
@@ -68,7 +72,14 @@
         position="150 300 -100"
       > -->
 
-      <a-video src="./static/video/Embrace_Landscape.mp4" width="500" height="500" position="0 0 0"></a-video>
+      <a-video 
+      src="#Embrace_Landscape" 
+      width="500" 
+      height="500" 
+      position="0 0 0" 
+      webkit-playsinline="true" 
+      playsinline="true">
+    </a-video>
       </a-entity>
     </a-nft>
     <a-entity camera></a-entity>
