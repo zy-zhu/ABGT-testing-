@@ -1,7 +1,27 @@
 
 
+body {
+      padding: 0;
+      margin: 0;
+    min-height: 100vh;
+      position:fixed;
+  }
+
+  /* Background */
+.image{
+position: fixed;
+z-index: 99;
+} 
 
 /* AR FRAME */
+.camera{
+
+  height: 100vh;
+  width: 100vw;
+  z-index: -99;
+
+
+}
 .arjs-loader {
     height: 100vh;
     width: 100vw;
@@ -26,3 +46,153 @@
     height: 100vh;
     width: 100vw;
   }
+
+
+
+    /* Title */
+    .titlea{
+      position: fixed;
+      margin-top:0;
+      padding: 0;
+    left: 0px;
+    z-index: 9999;
+    font-family: 'Akzidenz-Grotesk BQ';
+    font-style: normal;
+    font-weight: 700;
+    line-height:6.5vw;
+    font-size: 6.5vw;
+    color: #000000;
+    background-color: white;
+    }
+    
+    .titlea a{
+      color:black;
+      margin:0;
+      padding: 0;
+    }
+    .titlea a:hover{
+      color:black;
+      text-decoration: line-through;
+    }
+
+  /* Navigation */
+  .navbox{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    color:#F7CB45;
+    z-index: 10000;
+        }
+    
+        .navbox ul{
+            z-index: 999;
+        }
+        .navbox li{
+            list-style-type: none; 
+            color:#000000;
+            text-decoration: none;
+            height: min-content;
+            font-size: 7vw;
+        }
+       .navbox li:hover{
+            text-decoration: line-through;
+        }
+        
+        .navtitle{
+          z-index: 1000;
+    font-family: 'Akzidenz-Grotesk BQ';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6.5vw;
+    line-height: 6.5vw;
+    color: white;
+        }
+        .navtitle span{
+            float:right; 
+        }
+        .navtitle span:hover{ 
+            float:right; 
+            text-decoration: line-through;
+        }
+    
+    
+    .navtitle a{color:white;}
+    
+    .navtitl a:hover{ 
+        color:black;
+        text-decoration: line-through;
+    }
+
+
+    /* Share */
+    .share{
+      position: fixed;
+      right:5px;
+      top:0;
+      font-family: 'Abhaya Libre';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 3vw;
+      text-decoration-line: line-through;
+      color: #000000;
+      }
+        
+    
+    /* Footer */
+    
+    .footer{
+        position: fixed;
+        font-family: 'Heiti SC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+    left: 5px;
+    bottom: 0;
+    }
+
+
+    /* Load */
+
+    .load{
+      font-family: 'Heiti SC';
+      font-size: 20px;
+    }
+    
+    /* ^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+/* Phone Sizes */
+
+
+    @media only screen and (max-width: 600px) {
+  
+      .abgt{
+        opacity: 0;
+      }
+    
+      .enter{
+        font-size: 7vh;
+        bottom: 30vh;
+      }
+      .titlea{
+        font-size: 3.5vh;
+      }
+    .yellowrec{
+      position: fixed;
+      width: 51px;
+      height: 23px;
+      left: 0px;
+      top: 28px;
+      z-index: 9999;
+    }
+    .navtitle span{
+      font-size: 5vh;
+    }
+    .navtitle{
+      line-height: 5vh;
+    
+    }
+    .footer{
+      font-size: 10px;
+    }
+    
+    }

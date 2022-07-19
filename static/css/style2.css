@@ -1,82 +1,10 @@
-body {
-    background-color: white;
-        padding: 0;
-        margin: 0;
-        /* font-family: 'poppins'; */
-        min-height: 100vh;
-        position: relative;
-    }
 
-    /* Background */
-.image{
-  position: fixed;
-  z-index: 99;
-
-} 
-.position1{
-  left: 0px;
-top: 150px;
-}   
-.position2{
-  left: 411px;
-  top: 300px;}
-
-.position3{
-  left: 797px;
-  top: 500px;
-}   
-
-.position4{
-right: 0;
-  top: 200px;
-}  
-    /* For ALL */
-    .titlea{
-      position: fixed;
-      margin-top:0;
-      padding: 0;
-    left: 0px;
-    z-index: 99;
-    font-family: 'Akzidenz-Grotesk BQ';
-    font-style: normal;
-    font-weight: 700;
-    line-height:6.5vw;
-    font-size: 6.5vw;
-    color: #000000;
-    }
-    
-    .titlea a{
-      color:black;
-      margin:0;
-      padding: 0;
-    }
-    .titlea a:hover{
-      color:black;
-      text-decoration: line-through;
-    }
-    
-    .background{
-      position: fixed;
-      width: 15000Px;
-      height: 579px;
-      left: 0px;
-      top: 27px;
-      font-family: 'Akzidenz-Grotesk BQ';
-      font-style: normal;
-      font-weight: 100;
-      font-size: 500px;
-      line-height: 579px;
-      /* identical to box height */
-      z-index: -999;
-      color: #000000;
-      }
       .yellowrec{
         position: absolute;
     width: 176px;
     height: 23px;
     left: 0px;
     top: 79px;
-    
     background: #F7CB45;
       }
     
@@ -86,7 +14,9 @@ right: 0;
         user-select:none;
     
       }
-    @keyframes animate{
+    
+    
+      @keyframes animate{
       100%{
         transform: translate(-100%,0);
     
@@ -94,147 +24,9 @@ right: 0;
     }
       
 
-    .share{
-    position: fixed;
-    right:5px;
-    top:0;
-    font-family: 'Abhaya Libre';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 3vw;
-    text-decoration-line: line-through;
-    color: #000000;
-    }
-      
+  
 
-    .enter{
-    position: fixed;
-    z-index: 1000;
-    left:0px;
-    bottom: 8vh;
-    margin-bottom: 5px;
-    font-family: 'Akzidenz-Grotesk BQ';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 6.5vw;
-    color: #FF0000;
-    }
-    .enter a{
- color: #FF0000;
-    }
-    .enter a:hover{
-        text-decoration: line-through;
-           }
 
     
 
-    .navbox{
-position: fixed;
-right: 0;
-bottom: 0;
-color:#F7CB45;
-    }
 
-    .navbox ul{
-        z-index: 999;
-    }
-    .navbox li{
-        list-style-type: none; 
-        color:#000000;
-        text-decoration: none;
-        height: min-content;
-        font-size: 7vw;
-    }
-   .navbox li:hover{
-        text-decoration: line-through;
-    }
-    
-    .navtitle{
-font-family: 'Akzidenz-Grotesk BQ';
-font-style: normal;
-font-weight: 700;
-font-size: 100px;
-line-height: 100px;
-color: #000000;
-    }
-    .navtitle span{
-        float:right; 
-    }
-    .navtitle span:hover{ 
-        float:right; 
-        text-decoration: line-through;
-    }
-
-
-.navtitle a{color:black;}
-
-.navtitl a:hover{ 
-    color:black;
-    text-decoration: line-through;
-}
-
-.abgt{
-    position: fixed;
-bottom: 0;
-font-family: 'Akzidenz-Grotesk BQ';
-font-style: normal;
-font-weight: 700;
-font-size: 6.5vw;
-line-height: 116px;
-color: #000000;
-}
-.abgt-italic{
-    font-family: Baskerville;
-
-}
-
-
-/* Footer */
-
-.footer{
-    position: fixed;
-    font-family: 'Heiti SC';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-left: 5px;
-bottom: 0;
-}
-
-
-
-@media only screen and (max-width: 600px) {
-  body {
-    /* background-color: lightblue; */
-  }
-
-  .abgt{
-    opacity: 0;
-  }
-
-  .enter{
-    font-size: 7vh;
-    bottom: 30vh;
-  }
-  .titlea{
-    font-size: 3.5vh;
-  }
-.yellowrec{
-  position: absolute;
-  width: 51px;
-  height: 23px;
-  left: 0px;
-  top: 28px;
-}
-.navtitle span{
-  font-size: 7vh;
-}
-.navtitle{
-  line-height: 7vh;
-
-}
-.footer{
-  font-size: 10px;
-}
-
-}

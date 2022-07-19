@@ -4,19 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AR</title>
+    <title>AR Experience</title>
     <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
     
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href=".css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="./static/css/all.css">
-	<link rel="stylesheet" type="text/css" href="./static/css/style.css">
     <link rel="stylesheet" type="text/css" href="./static/css/style2.css">
-    <link rel="stylesheet" type="text/css" href="./static/css/quiz-style.css"> 
-	<link rel="stylesheet" type="text/css" href="./static/css/fixed.css"> 
     <link rel="stylesheet" type="text/css" href="./static/css/ar.css"> 
     
 </head>
@@ -40,13 +35,15 @@
 			  </ul>
 			</div>
 <!-- AR CONTENT -->
+
+<div class="camera">
+  
 <div class="ar-container">
 
  <!-- minimal loader shown until image descriptors are loaded -->
  <div class="arjs-loader">
-    <div>Loading,please wait for a while...</div>
+    <div class="load">Loading..</div>
   </div>
-
 
   <a-scene
     vr-mode-ui="enabled: false;"
@@ -54,6 +51,7 @@
     embedded
     arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
   >
+
     <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
     <a-nft
       type="nft"
@@ -63,15 +61,24 @@
       smoothTolerance=".01"
       smoothThreshold="5"
     >
-      <a-entity
+      <!-- <a-entity
         gltf-model="https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
         scale="5 5 5"
         position="150 300 -100"
-      >
+      > -->
+
+      <a-video src="./static/video/Embrace_Landscape.mp4" width="50" height="50" position="0 0 -20"></a-video>
       </a-entity>
     </a-nft>
     <a-entity camera></a-entity>
   </a-scene>
+
+
+
+
+
+</div>
+
 
   </div>
             <div class="footer">
