@@ -78,7 +78,6 @@ z-index: 99;
     position: fixed;
     right: 0;
     bottom: 0;
-    color:#F7CB45;
     z-index: 10000;
         }
     
@@ -103,7 +102,7 @@ z-index: 99;
     font-weight: 700;
     font-size: 6.5vw;
     line-height: 6.5vw;
-    color: white;
+
         }
         .navtitle span{
             float:right; 
