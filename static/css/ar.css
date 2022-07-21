@@ -70,7 +70,6 @@ z-index: 99;
     }
     .titlea a:hover{
       color:black;
-      text-decoration: line-through;
     }
 
   /* Navigation */
@@ -147,21 +146,8 @@ z-index: 99;
 
 .navtitl a:hover{ 
     color:black;
-    text-decoration: line-through;
 }
 
-    /* Share */
-    .share{
-      position: fixed;
-      right:5px;
-      top:0;
-      font-family: 'Abhaya Libre';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 3vw;
-      text-decoration-line: line-through;
-      color: #000000;
-      }
         
     
     /* Footer */
