@@ -77,7 +77,7 @@ z-index: 99;
   .navbox{
     position: fixed;
     right: 0;
-    bottom: 0;
+    bottom:0;
     color:#F7CB45;
         }
     
@@ -103,6 +103,7 @@ z-index: 99;
           font-size: 100px;
           line-height: 100px;
           color: #000000;
+          margin:0;
 
         }
         .navtitle span{
@@ -153,6 +154,7 @@ z-index: 99;
     /* Footer */
     
     .footer{
+      z-index: 10000;
         position: fixed;
         font-family: 'Heiti SC';
         font-style: normal;
@@ -204,7 +206,7 @@ z-index: 99;
     
     }
     .footer{
-      font-size: 10px;
+      font-size: 8px;
     }
     
     .linethrough{

@@ -1,7 +1,121 @@
 
+.modal{
+    display: inline;
+    position:fixed;
+    z-index: 999;
+    left: 0;
+    top:0;
+    padding-top: 200px;
+    padding-bottom: 300px;
+    width:100%;
+    height:100%;
+    overflow: auto;
+    text-align: center;
+    background-color: rgba(0,0,0,0.4);
+   
+}
 
+.modal-content{
+    position: relative;
+    background-color: white;
+    margin:auto;
+    padding: 200px auto;
+    width: 400px;
+    -webkit-animation-name:animatetop ;
+    -webkit-animation-duration: 1s;
+    animation-name: animatetop;
+    animation-duration: 1s;
+    border: black;
+ 
+    border-style: solid;
+    border-width: 3px;
+}
+
+@-webkit-keyframes animatetop{
+    from{top:-20px;opacity: 0;}
+    to {top:0;opacity: 1;}
+}
+
+@keyframes animatetop{
+    from{top:-20px;opacity: 0;}
+    to {top:0;opacity: 1;}
+}
+
+.close{
+    color:black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover, .close:focus{
+color:black;
+text-decoration: none;
+cursor:pointer;
+}
+
+.modal-header{
+    display: block;
+    line-height: 30px;
+    padding: 2px 10px;
+    background-color: white;
+    text-align:left;
+    font-family: 'Akzidenz-Grotesk BQ';
+}
+
+.modal-body{
+    font-family: Heiti SC;
+    padding: 2px 16px;
+    font-size: 18px;
+    height: 200px;
+}
+
+.modal-footer{
+    display: block;
+    line-height: 30px;
+    padding: 4px 10px;
+    background-color: white;
+    color:black;
+}
+.modal-footer button{
+    color:white;
+    background-color: black;
+
+
+}
+
+.submitBtn {
+    width: 8vw;
+    height: 4vh;
+    font-size: 15px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    font-family: 'Akzidenz-Grotesk BQ';
+    margin:5px;
+  }
+
+  .submitBtn:hover {
+    background-color:red;
+    border: black;
+    border-width: 5px;
+    color: white;
+    outline: black;
+  
+  }
 
 
 
     @media only screen and (max-width: 600px) {
+
+        .submitBtn {
+            width: 40vw;
+            height:10vh;
+            font-size: 25px;
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+            transition: 0.5s;
+            font-family: 'Akzidenz-Grotesk BQ';
+          }
     }

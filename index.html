@@ -15,17 +15,17 @@
 
    <script type="text/javascript" href="./ar.js"></script>
    
-
+   <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./static/css/ar.css"> 
     <link rel="stylesheet" type="text/css" href="./static/css/pop.css"> 
   </head>
   <body>
 <!-- Navigation  -->
-    <div  class="titlea"><a href="http://ec2-3-90-162-76.compute-1.amazonaws.com:8080/">MIT CLIMATE MACHINE(test)</a></div>
+    <div  class="titlea"><a href="http://ec2-3-90-162-76.compute-1.amazonaws.com:8080/">MIT CLIMATE MACHINE</a></div>
     <div class="yellowrec"></div>
       <ul class="navbox navtitle">
       <li>
-        <a href="/ar"><span class="linethrough">AR</span></a>
+        <a href="#"><span class="linethrough">AR</span></a>
       </li>
       <li >
         <a href="http://ec2-3-90-162-76.compute-1.amazonaws.com:8080/survey"><span>QUIZ</span></a>
@@ -43,21 +43,25 @@
     <div id="myModal" class="modal">
       <div class="modal-content">
         <div class="modal-header">
-          <span class="close">&times;</span>
-          <h2>Anouncement</h2>
+          <span class="close" onclick="closeWindow()">&times;</span>
+          <h2>Welcome</h2>
 
         </div>
         <div class="modal-body">
-          <p>information</p>
+          <p>AR Experience will be available on July 22nd, ABGT Weekender 2022</p>
+          <br>
+          <p>Check our Climate Identity Quiz First!</p>
         </div>
         <div class="modal-footer">
-          <button>Enter Quiz</button>
+        <a href="http://ec2-3-90-162-76.compute-1.amazonaws.com:8080/survey"> <button id="quiz" class="btn submitBtn" type="submit">Enter Quiz</button></a> 
         </div>
       </div>
     </div>
 
 
     <!-- AR Content  -->
+
+
     <a-scene mindar-image="imageTargetSrc: static/img/mark_1.mind" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       
       <a-assets>
@@ -84,5 +88,15 @@
         <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#bearModel" animation-mixer>
       </a-entity> -->
     </a-scene>
+
+
+
+
+<footer>
+	All Rights Reserved 2022 &copy; <a href="https://anjunabeats.com/terms-and-conditions">Terms & Conditions</a>
+	<a href="https://anjunabeats.com/privacy-policy">Privacy Policy</a>
+
+</footer>
+
   </body>
 </html>
