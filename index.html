@@ -12,9 +12,12 @@
     <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-image-aframe.prod.js"></script>
     <meta name="apple-mobile-web-app-capable" content="yes">
    <!-- CSS -->
+
+   <script type="text/javascript" href="./ar.js"></script>
    
 
     <link rel="stylesheet" type="text/css" href="./static/css/ar.css"> 
+    <link rel="stylesheet" type="text/css" href="./static/css/pop.css"> 
   </head>
   <body>
 <!-- Navigation  -->
@@ -37,7 +40,23 @@
 
     <!-- Pop Up Window -->
 
-    
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Anouncement</h2>
+
+        </div>
+        <div class="modal-body">
+          <p>information</p>
+        </div>
+        <div class="modal-footer">
+          <button>Enter Quiz</button>
+        </div>
+      </div>
+    </div>
+
+
     <!-- AR Content  -->
     <a-scene mindar-image="imageTargetSrc: static/img/mark_1.mind" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       
