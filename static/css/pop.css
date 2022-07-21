@@ -107,7 +107,28 @@ cursor:pointer;
 
 
     @media only screen and (max-width: 600px) {
-
+        .modal-content{
+            position: relative;
+            background-color: white;
+            margin:auto;
+            padding: 100px auto;
+            width: 200px;
+            -webkit-animation-name:animatetop ;
+            -webkit-animation-duration: 1s;
+            animation-name: animatetop;
+            animation-duration: 1s;
+            border: black;
+         
+            border-style: solid;
+            border-width: 3px;
+        }
+        .modal-body{
+            font-family: Heiti SC;
+            padding: 2px 16px;
+            font-size: 14px;
+            height: 200px;
+        }
+        
         .submitBtn {
             width: 40vw;
             height:10vh;
