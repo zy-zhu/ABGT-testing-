@@ -1,12 +1,13 @@
+.yellowrec{
+  position: absolute;
+width: 176px;
+height: 23px;
+left: 0px;
+top: 79px;
 
-      .yellowrec{
-        position: absolute;
-    width: 176px;
-    height: 23px;
-    left: 0px;
-    top: 79px;
-    background: #F7CB45;
-      }
+background: #E87400;
+}
+
     
       .marquee{
         text-transform: uppercase;
