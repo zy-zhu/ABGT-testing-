@@ -112,7 +112,7 @@ cursor:pointer;
             background-color: white;
             margin:auto;
             padding: 100px auto;
-            width: 200px;
+            width: 300px;
             -webkit-animation-name:animatetop ;
             -webkit-animation-duration: 1s;
             animation-name: animatetop;
@@ -130,9 +130,9 @@ cursor:pointer;
         }
         
         .submitBtn {
-            width: 40vw;
-            height:10vh;
-            font-size: 25px;
+            width: 25vw;
+            height:8vh;
+            font-size: 15px;
             border-radius: 20px;
             background-color: black;
             color: white;
