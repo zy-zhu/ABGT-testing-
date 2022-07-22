@@ -13,11 +13,17 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
    <!-- CSS -->
 
-   <script type="text/javascript" href="./ar.js"></script>
+   <script type="text/javascript" src="./ar.js"></script>
    
    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./static/css/ar.css"> 
     <link rel="stylesheet" type="text/css" href="./static/css/pop.css"> 
+<script>
+
+</script>
+
+
+
   </head>
   <body>
 <!-- Navigation  -->
@@ -43,7 +49,7 @@
     <div id="myModal" class="modal">
       <div class="modal-content">
         <div class="modal-header">
-          <span class="close" onclick="closeWindow()">&times;</span>
+          <span class="close" id='close' onclick="closeWindow();">&times;</span>
           <h2>Welcome</h2>
 
         </div>
@@ -54,7 +60,8 @@
         </div>
         <div class="modal-footer">
         <a href="http://ec2-3-90-162-76.compute-1.amazonaws.com:8080/survey"> <button id="quiz" class="btn submitBtn" type="submit">Enter Quiz</button></a> 
-        </div>
+
+      </div>
       </div>
     </div>
 
@@ -62,23 +69,21 @@
     <!-- AR Content  -->
 
 
-    <a-scene mindar-image="imageTargetSrc: static/img/mark_1.mind" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+    <a-scene mindar-image="imageTargetSrc: static/img/bah.mind" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       
       <a-assets>
-        <img id="card" src="static/img/mark1.jpg" />
-        <video id="me" autoplay="true" loop="true" src="static/video/me2.webm"></video>
+        <img id="img" src="static/img/bah.mind" />
+        <video id="bah" autoplay="true" loop="true" src="static/video/bah.webm"></video>
     
         <!-- <video id="land" autoplay="true" loop="true" src="static/video/me2.mp4"></video> -->
-        <a-asset-item id="bearModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/examples/image-tracking/assets/band-example/bear/scene.gltf"></a-asset-item>
+        <!-- <a-asset-item id="bearModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/examples/image-tracking/assets/band-example/bear/scene.gltf"></a-asset-item> -->
       </a-assets>
-
-
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 
       <a-entity mindar-image-target="targetIndex: 0">
-        <a-video src="#me" height="1.5" width="0.9"  position="0 0 0" rotation="0 0 0" playsinline webkit-playsinline></a-video>
+        <a-video src="#bah" height="1.5" width="0.9"  position="0 0 0" rotation="0 0 0" playsinline webkit-playsinline></a-video>
      
-        <!-- <a-video src="#land" width="0.7" height="1" position="0 0 0" rotation="0 0 0" playsinline webkit-playsinline></a-video> -->
+
         <!-- <a-plane src="#card" position="0 0 0" height="2" width="1" rotation="0 0 0"></a-plane> -->
         <!-- <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#raccoonModel" animation-mixer> -->
       </a-entity>
