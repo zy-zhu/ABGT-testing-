@@ -1,4 +1,7 @@
 @font-face { font-family: Akzidenz-Grotesk BQ; src: url('../font/AkzidenzGrotesk-Bold.otf'); } 
+video {
+  mix-blend-mode: screen;
+}
 
 body {
       padding: 0;
