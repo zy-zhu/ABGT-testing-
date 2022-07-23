@@ -98,12 +98,12 @@
       <a-assets>
         <video id="bah" response-type="arraybuffer" crossorigin autoplay="'false" muted loop="true" controls src="static/video/bah.mp4"></video>
         <!-- <video id="cm" autoplay="false" controls src="./static/video/cm.webm" playsinline webkit-playsinline></video> -->
-        <video id="cm"  response-type="arraybuffer" crossorigin autoplay muted loop="true" controls src="static/video/cm.mp4"></video>
-        <video id="rf"  response-type="arraybuffer" crossorigin autoplay muted loop="true" controls src="static/video/rf.mp4"></video>
-        <video id="wf"  response-type="arraybuffer" crossorigin autoplay muted loop="true" controls src="static/video/wf.mp4"></video>
-        <video id="el" response-type="arraybuffer" crossorigin autoplay muted loop="true" controls src="static/video/el.mp4"></video>
-        <video id="eg"  response-type="arraybuffer" crossorigin autoplay muted loop="true" controls src="static/video/eg.mp4"></video>
-        <!-- <img id="emp" src="static/gif/cm2.gif"/> -->
+        <video id="cm" crossorigin autoplay muted loop="true" src="static/video/cm.mp4"></video>
+        <video id="rf"  crossorigin autoplay muted loop="true" src="static/video/rf.mp4"></video>
+        <video id="wf" crossorigin autoplay muted loop="true" src="static/video/bzw.mp4"></video>
+        <video id="el" crossorigin autoplay muted loop="true" src="static/video/el.mp4"></video>
+        <video id="eg"  crossorigin autoplay muted loop="true" src="static/video/eg.mp4"></video>
+        <!-- <img id="emp" response-type="arraybuffer"  src="static/gif/cm2.gif"/> -->
 
       </a-assets>
 
@@ -159,7 +159,6 @@
       var video2=document.querySelector('#bah');
       if(video2.paused==true){
         video2.play();
-
       }else{
         video2.pause();
       
@@ -172,7 +171,7 @@
         video3.play();
       }else{
         video3.pause();
-    
+  
       }
     },false);
 
