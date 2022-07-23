@@ -137,8 +137,8 @@ cursor:pointer;
 .modal-body{
     font-family: Heiti SC;
     padding: 2px 16px;
-    font-size: 18px;
-    height: 200px;
+    font-size: 20px;
+    height: 230px;
 }
 
 .modal-footer{
@@ -208,7 +208,7 @@ cursor:pointer;
         .modal-body{
             font-family: Heiti SC;
             padding: 2px 16px;
-            font-size: 14px;
+            font-size: 16px;
             height: 200px;
         }
         

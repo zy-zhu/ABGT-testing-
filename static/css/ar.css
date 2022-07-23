@@ -1,5 +1,9 @@
 @font-face { font-family: Akzidenz-Grotesk BQ; src: url('../font/AkzidenzGrotesk-Bold.otf'); } 
 
+p{
+  font-size: 8px;
+}
+
 
 body {
       padding: 0;
