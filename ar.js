@@ -1,8 +1,3 @@
-
-
-
-
-
 function closeWindow(){
 
    var modal=document.getElementById('myModal');
