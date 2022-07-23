@@ -84,7 +84,7 @@
 
     <!-- Intro Video -->
     <div class="video-intro" id="video-intro">
-      <video class="video-intro-box" id="play" controls muted="false;" autoplay src="./static/video/cm.mp4" playsinline webkit-playsinline></video>
+      <video class="video-intro-box" id="play" autoplay muted controls src="./static/video/cm.mp4" playsinline webkit-playsinline></video>
       <span class="skip" id='skip' onclick="closeVideo();">&times;close</span>
     </div> 
 
@@ -92,10 +92,6 @@
 
     <!-- AR Content  -->
 
-<!-- 
-    <div class="video-test">
-      <video class="video-box" id="bah" autoplay loop src="./static/video/eg.mp4" playsinline webkit-playsinline></video>
-    </div> -->
 
 
     <a-scene mindar-image="imageTargetSrc: static/img/targets_n.mind" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
