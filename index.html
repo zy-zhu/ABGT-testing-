@@ -96,46 +96,46 @@
     <a-scene mindar-image="imageTargetSrc: static/img/target.mind" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       
       <a-assets>
-        <video id="bah" autoplay muted loop="true" controls src="static/video/bah.mp4"></video>
+        <video id="bah" preload="auto" response-type="arraybuffer" crossorigin autoplay muted loop="true" controls src="static/video/bah.mp4"></video>
         <!-- <video id="cm" autoplay="false" controls src="./static/video/cm.webm" playsinline webkit-playsinline></video> -->
-        <video id="cm" autoplay muted loop="true" controls src="static/video/cm.mp4"></video>
-        <video id="rf" autoplay muted loop="true" controls src="static/video/rf.mp4"></video>
-        <video id="wf" autoplay muted loop="true" controls src="static/video/wf.mp4"></video>
-        <video id="el"  autoplay muted loop="true" controls src="static/video/el.mp4"></video>
-        <video id="eg"  autoplay muted loop="true" controls src="static/video/eg.mp4"></video>
-        <img id="emp" src="static/gif/cm2.gif"/>
+        <video id="cm" preload="auto" response-type="arraybuffer" crossorigin autoplay muted loop="true" controls src="static/video/cm.mp4"></video>
+        <video id="rf" preload="auto" response-type="arraybuffer" crossorigin autoplay muted loop="true" controls src="static/video/rf.mp4"></video>
+        <video id="wf" preload="auto" response-type="arraybuffer" crossorigin autoplay muted loop="true" controls src="static/video/wf.mp4"></video>
+        <video id="el" preload="auto" response-type="arraybuffer" crossorigin autoplay muted loop="true" controls src="static/video/el.mp4"></video>
+        <video id="eg"  preload="auto" response-type="arraybuffer" crossorigin autoplay muted loop="true" controls src="static/video/eg.mp4"></video>
+        <!-- <img id="emp" src="static/gif/cm2.gif"/> -->
 
       </a-assets>
 
 
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
       <a-entity mindar-image-target="targetIndex: 0">
-        <a-video src="#bah" height="1.5" width="1"  position="0 0 0" rotation="0 0 0" autoplay playsinline webkit-playsinline></a-video>
+        <a-video src="#bah" height="1.5" width="1"  position="0 0 0" rotation="0 0 0" playsinline webkit-playsinline></a-video>
         <!-- <a-plane src="#card" position="0 0 0" height="2" width="1" rotation="0 0 0"></a-plane> -->
         <!-- <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#raccoonModel" animation-mixer> -->
       </a-entity>
 
       
       <a-entity mindar-image-target="targetIndex: 1">
-        <a-video src="#wf" height="1.5" width="1"  position="0 0 0" rotation="0 0 0" autoplay muted playsinline webkit-playsinline></a-video>
+        <a-video src="#wf" height="1.5" width="1"  position="0 0 0" rotation="0 0 0" playsinline webkit-playsinline></a-video>
 
       </a-entity>
 
       <a-entity mindar-image-target="targetIndex: 2">
-        <!-- <a-video src="#cm" height="1.5" width="1"  position="0 0 0" rotation="0 0 0"  playsinline webkit-playsinline></a-video> -->
-         <a-plane src="#cmp" position="0 0 0" height="2" width="1" rotation="0 0 0"></a-plane>
+        <a-video src="#cm" height="1.5" width="1"  position="0 0 0" rotation="0 0 0"  playsinline webkit-playsinline></a-video>
+         <!-- <a-plane src="#cmp" position="0 0 0" height="2" width="1" rotation="0 0 0"></a-plane> -->
       </a-entity>
 
       <a-entity mindar-image-target="targetIndex: 3">
-        <a-video src="#eg" height="1.5" width="1"  position="0 0 0" rotation="0 0 0" autoplay muted playsinline webkit-playsinline></a-video>
+        <a-video src="#eg" height="1.5" width="1"  position="0 0 0" rotation="0 0 0" playsinline webkit-playsinline></a-video>
       </a-entity>
 
       <a-entity mindar-image-target="targetIndex: 4">
-        <a-video src="#el" height="1.5" width="1"  position="0 0 0" rotation="0 0 0" autoplay muted playsinline webkit-playsinline></a-video>
+        <a-video src="#el" height="1.5" width="1"  position="0 0 0" rotation="0 0 0" playsinline webkit-playsinline></a-video>
       </a-entity>
 
     <a-entity mindar-image-target="targetIndex: 5">
-      <a-video src="#rf" height="1.5" width="1"  position="0 0 0" rotation="0 0 0" autoplay muted playsinline webkit-playsinline></a-video>
+      <a-video src="#rf" height="1.5" width="1"  position="0 0 0" rotation="0 0 0"  playsinline webkit-playsinline></a-video>
     </a-entity>
 
   </a-scene>
