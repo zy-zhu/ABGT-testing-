@@ -23,8 +23,11 @@ function openIntro(){
     var introbutton=document.getElementById('intro');
     var introvideo=document.getElementById('video-intro');
     var modal=document.getElementById('myModal');
+    var play=document.getElementById('play');
+
     modal.style.display='none';
-    introvideo.style.display='inline';  
+    introvideo.style.display='inline'; 
+    play.video.muted='false';
 
 }
 
