@@ -2,29 +2,26 @@
 <html lang="en">
   <head>
     
-    <title>AR Experience</title>
-    <!-- AR.JS -->
+    <title>MIT Climate Machine AR</title>
+    <meta charset="utf-8">
+    <!-- Javascript -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-image.prod.js"></script>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-image-aframe.prod.js"></script>
-    <meta name="apple-mobile-web-app-capable" content="yes">
+    <script type="text/javascript" src="./ar.js"></script>
+ 
    <!-- CSS -->
-
-   <script type="text/javascript" src="./ar.js"></script>
    
-   <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="./static/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./static/css/ar.css"> 
     <link rel="stylesheet" type="text/css" href="./static/css/pop.css"> 
-<script>
-
-</script>
-
-
 
   </head>
+
+
   <body>
 <!-- Navigation  -->
     <div  class="titlea"><a href="http://ec2-3-90-162-76.compute-1.amazonaws.com:8080/">MIT CLIMATE MACHINE</a></div>
@@ -42,16 +39,16 @@
       </ul>
     </div>
 
-
+  
+    
 
     <!-- Pop Up Window -->
 
-    <div id="myModal" class="modal">
+    <!-- <div id="myModal" class="modal">
       <div class="modal-content">
         <div class="modal-header">
           <span class="close" id='close' onclick="closeWindow();">&times;</span>
           <h2>Welcome</h2>
-
         </div>
         <div class="modal-body">
           <p>AR Experience will be available on July 23th, ABGT Weekender 2022</p>
@@ -60,19 +57,50 @@
         </div>
         <div class="modal-footer">
         <a href="http://ec2-3-90-162-76.compute-1.amazonaws.com:8080/survey"> <button id="quiz" class="btn submitBtn" type="submit">Enter Quiz</button></a> 
+      </div>
+      </div>
+    </div> -->
 
+    <!-- Pop up window available on July 22nd  -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close" id='close' onclick="closeWindow();">&times;</span>
+          <h2>Welcome</h2>
+        </div>
+        <div class="modal-body">
+          <br>
+          <p>Welcome to MIT Climate Machine AR Experience</p>
+          <br>
+          <p>Before start your experience, please scan our introduction board to see the instruction.</p>
+        </div>
+        <div class="modal-footer">
+        <a id='close' onclick="closeWindow();"> <button id="quiz" class="btn submitBtn" type="submit">Start</button></a> 
+          <a class="intro" id="intro" onclick="openIntro();"> <button id="quiz" class="btn introBtn" type="submit">Instruction</button></a> 
       </div>
       </div>
     </div>
 
 
+    <!-- Intro Video -->
+    <div class="video-intro" id="video-intro">
+      <video class="video-intro-box" autoplay src="./static/video/cm.mp4" playsinline webkit-playsinline></video>
+      <span class="skip" id='skip' onclick="closeVideo();">&times;close</span>
+    </div> 
+
+    <span class="instruction" id='instruction' onclick="openInstru();">&target; Instruction</span>
+
     <!-- AR Content  -->
+
+<!-- 
+    <div class="video-test">
+      <video class="video-box" id="bah" autoplay loop src="./static/video/eg.mp4" playsinline webkit-playsinline></video>
+    </div> -->
 
 
     <a-scene mindar-image="imageTargetSrc: static/img/targets.mind" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
-      
+<!--       
       <a-assets>
-        <!-- <img id="img" src="static/img/bah.mind" /> -->
         <video id="bah" autoplay="true" loop="true" src="static/video/bah.mp4"></video>
         <video id="cm" autoplay="true" loop="true" src="static/video/cm.mp4"></video>
         <video id="rf" autoplay="true" loop="true" src="static/video/rf.mp4"></video>
@@ -80,7 +108,7 @@
         <video id="el" autoplay="true" loop="true" src="static/video/el.mp4"></video>
         <video id="eg" autoplay="true" loop="true" src="static/video/eg.mp4"></video>
 
-      </a-assets>
+      </a-assets> -->
 
 
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
@@ -106,19 +134,17 @@
       <a-entity mindar-image-target="targetIndex: 4">
         <a-video src="#rf" height="1.5" width="1"  position="0 0 0" rotation="0 0 0" playsinline webkit-playsinline></a-video>
       </a-entity>
-    </a-scene>
-
 
     <a-entity mindar-image-target="targetIndex: 5">
       <a-video src="#wf" height="1.5" width="1"  position="0 0 0" rotation="0 0 0" playsinline webkit-playsinline></a-video>
     </a-entity>
+
   </a-scene>
 
 
 <footer>
-	All Rights Reserved 2022 &copy; <a href="https://anjunabeats.com/terms-and-conditions">Terms & Conditions</a>
+	All Rights Reserved 2022 MIT Climate Machine&copy; <a href="https://anjunabeats.com/terms-and-conditions">Terms & Conditions</a>
 	<a href="https://anjunabeats.com/privacy-policy">Privacy Policy</a>
-
 </footer>
 
   </body>

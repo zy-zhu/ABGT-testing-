@@ -1,13 +1,11 @@
 @font-face { font-family: Akzidenz-Grotesk BQ; src: url('../font/AkzidenzGrotesk-Bold.otf'); } 
-video {
-  mix-blend-mode: screen;
-}
+
 
 body {
       padding: 0;
       margin: 0;
-    min-height: 100vh;
-    min-width: 100vw;
+      min-height: 100vh;
+      min-width: 100vw;
       position:fixed;
   }
 
@@ -120,7 +118,7 @@ z-index: 99;
         }
     
         .yellowrec{
-          position: absolute;
+          position: fixed;
         width: 176px;
         height: 23px;
         left: 0px;
@@ -156,15 +154,19 @@ z-index: 99;
     
     /* Footer */
     
-    .footer{
-      z-index: 10000;
+footer{
+      z-index: 999;
         position: fixed;
         font-family: 'Heiti SC';
         font-style: normal;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 10px;
     left: 5px;
     bottom: 0;
+    }
+
+    footer a{
+      color:black;
     }
 
 
@@ -208,8 +210,8 @@ z-index: 99;
       line-height: 5vh;
     
     }
-    .footer{
-      font-size: 8px;
+    footer{
+      font-size: 6px;
     }
     
     .linethrough{
