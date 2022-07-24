@@ -101,10 +101,10 @@
         <video id="eg" class='vide' autoplay muted loop="true" src="static/video/eg.mp4"></video>
       </a-assets>
 
-
-  
       <a-entity mindar-image-target="targetIndex: 0">
-        <a-video src="#bah" style="display:inline;" height="1.6" width="1"  position="0 0 0" rotation="0 0 0" playsinline webkit-playsinline></a-video>
+        <a-video src="#bah" style="display:inline;" height="1.6" width="1"  position="0 0 0" rotation="0 0 0" playsinline webkit-playsinline>
+      </a-video>
+        
       </a-entity>
  
       <a-entity mindar-image-target="targetIndex: 1">
@@ -113,7 +113,6 @@
 
       <a-entity mindar-image-target="targetIndex: 2">
         <a-video  src="#cm" height="1.6" width="1"  position="0 0 0" rotation="0 0 0"  playsinline webkit-playsinline></a-video>
-         <!-- <a-plane src="#cmp" position="0 0 0" height="2" width="1" rotation="0 0 0"></a-plane> -->
       </a-entity>
 
       <a-entity mindar-image-target="targetIndex: 3">
@@ -131,23 +130,27 @@
 <!-- New added Marker -->
 
     <a-entity mindar-image-target="targetIndex: 6">
-      <a-video  src="#bah" height="4.5" width="3"  position="0 0 0" rotation="0 0 0"  playsinline webkit-playsinline></a-video>
+      <a-video  src="#bah" height="6.6" width="4"  position="0 0 0" rotation="0 0 0"  playsinline webkit-playsinline></a-video>
     </a-entity>
 
     <a-entity mindar-image-target="targetIndex: 7">
-      <a-video  src="#eg" height="4.5" width="3"  position="0 0 0" rotation="0 0 0"  playsinline webkit-playsinline></a-video>
+      <a-video  src="#eg" height="6.6" width="4"  position="0 0 0" rotation="0 0 0"  playsinline webkit-playsinline></a-video>
     </a-entity>
 
  <a-entity mindar-image-target="targetIndex: 8">
-      <a-video  src="#el" height="4.5" width="3"  position="0 0 0" rotation="0 0 0"  playsinline webkit-playsinline></a-video>
+      <a-video  src="#el" height="6.6" width="4"  position="0 0 0" rotation="0 0 0"  playsinline webkit-playsinline></a-video>
     </a-entity>
     <a-entity mindar-image-target="targetIndex: 9">
-      <a-video  src="#wf" height="4.5" width="3"  position="0 0 0" rotation="0 0 0"  playsinline webkit-playsinline></a-video>
+      <a-video  src="#wf" height="6.6" width="4"  position="0 0 0" rotation="0 0 0"  playsinline webkit-playsinline></a-video>
     </a-entity>
   </a-scene>
 
 
   <script>
+
+    const button=document.getElementById('play');
+
+
     window.addEventListener('click',function(){
       var video1=document.querySelector('#cm');
       if(video1.paused==true){
