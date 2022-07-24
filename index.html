@@ -62,7 +62,7 @@
     </div> -->
 
     <!-- Pop up window available on July 22nd  -->
-    <div id="myModal" class="modal">
+    <!-- <div id="myModal" class="modal">
       <div class="modal-content">
         <div class="modal-header">
           <span class="close" id='close' onclick="closeWindow();">&times;</span>
@@ -77,48 +77,40 @@
         </div>
         <div class="modal-footer">
         <a id='close' onclick="closeWindow();"> <button id="quiz" class="btn submitBtn" type="submit">Start</button></a> 
-          <a class="intro" id="intro" onclick="openIntro();"> <button id="quiz" class="btn introBtn" type="submit">Instruction</button></a> 
+       
       </div>
-      </div>
-    </div>
+    </div> -->
 
 
     <!-- Intro Video -->
-    <div class="video-intro" id="video-intro">
+    <!-- <div class="video-intro" id="video-intro">
       <video class="video-intro-box" id="play" autoplay="false" controls src="./static/video/cm.mp4" playsinline webkit-playsinline></video>
-
       <span class="skip" id='skip' onclick="closeVideo();">&times;close</span>
-    </div> 
-
+    </div>  -->
     <!-- <span class="instruction" id="instruction" onclick="openInstru();">&target; Instruction</span> -->
-
     <!-- AR Content  -->
 
     <a-scene mindar-image="imageTargetSrc: static/img/targets.mind" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
-      
+      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
       <a-assets>
-        <video id="bah" autoplay muted loop="true" src="static/video/bah.mp4"></video>
-        <video id="cm" autoplay muted loop="true" src="static/video/cm.mp4"></video>
-        <video id="rf" autoplay muted loop="true" src="static/video/rf.mp4"></video>
-        <video id="wf" autoplay muted loop="true" src="static/video/bzw.mp4"></video>
-        <video id="el" autoplay muted loop="true" src="static/video/el.mp4"></video>
-        <video id="eg" autoplay muted loop="true" src="static/video/eg.mp4"></video>
+        <video id="bah" class='vide' autoplay muted loop="true" src="static/video/bah.mp4"></video>
+        <video id="cm" class='vide' autoplay muted loop="true" src="static/video/cm.mp4"></video>
+        <video id="rf" class='vide' autoplay muted loop="true" src="static/video/rf.mp4"></video>
+        <video id="wf" class='vide' autoplay muted loop="true" src="static/video/bzw.mp4"></video>
+        <video id="el" class='vide' autoplay muted loop="true" src="static/video/el.mp4"></video>
+        <video id="eg" class='vide' autoplay muted loop="true" src="static/video/eg.mp4"></video>
         <!-- <img id="emp" response-type="arraybuffer"  src="static/gif/cm2.gif"/> -->
 
       </a-assets>
 
 
-      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+  
       <a-entity mindar-image-target="targetIndex: 0">
-        <a-video src="#bah" height="1.6" width="1"  position="0 0 0" rotation="0 0 0" playsinline webkit-playsinline></a-video>
-        <!-- <a-plane src="#card" position="0 0 0" height="2" width="1" rotation="0 0 0"></a-plane> -->
-        <!-- <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#raccoonModel" animation-mixer> -->
+        <a-video src="#bah" style="display:inline;" height="1.6" width="1"  position="0 0 0" rotation="0 0 0" playsinline webkit-playsinline></a-video>
       </a-entity>
-
-      
+ 
       <a-entity mindar-image-target="targetIndex: 1">
-        <a-video  src="#wf"  height="1.6" width="1"  position="0 0 0" rotation="0 0 0" playsinline webkit-playsinline></a-video>
-
+        <a-video style="display:inline;" src="#wf"  height="1.6" width="1"  position="0 0 0" rotation="0 0 0" playsinline webkit-playsinline></a-video>
       </a-entity>
 
       <a-entity mindar-image-target="targetIndex: 2">
@@ -135,7 +127,7 @@
       </a-entity>
 
     <a-entity mindar-image-target="targetIndex: 5">
-      <a-video  src="#rf" height="1.6" width="1"  position="0 0 0" rotation="0 0 0"  playsinline webkit-playsinline></a-video>
+      <a-video  src="#rf" style="display:inline;" height="1.6" width="1"  position="0 0 0" rotation="0 0 0"  playsinline webkit-playsinline></a-video>
     </a-entity>
 
 <!-- New added Marker -->
