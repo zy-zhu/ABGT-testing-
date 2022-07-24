@@ -99,8 +99,6 @@
         <video id="wf" class='vide' autoplay muted loop="true" src="static/video/bzw.mp4"></video>
         <video id="el" class='vide' autoplay muted loop="true" src="static/video/el.mp4"></video>
         <video id="eg" class='vide' autoplay muted loop="true" src="static/video/eg.mp4"></video>
-        <!-- <img id="emp" response-type="arraybuffer"  src="static/gif/cm2.gif"/> -->
-
       </a-assets>
 
 
@@ -150,10 +148,14 @@
 
 
   <script>
+    const cm=document.getElementById('cm');
+    const bah=document.getElementById('bah');
+    const wf=document.getElementById("wf");
+    const eg=document.getElementById('eg');
+    const el=documnet.getElementById('el');
+    const rf=document.getElementById("rf");
 
-
-
-    window.addEventListener('click',function(){
+    cm.addEventListener('click',function(){
       var video1=document.querySelector('#cm');
       if(video1.paused==true){
         video1.play();
@@ -162,7 +164,7 @@
       }
     },false);
 
-    window.addEventListener('click',function(){
+    bah.addEventListener('click',function(){
       var video2=document.querySelector('#bah');
       if(video2.paused==true){
         video2.play();
@@ -172,7 +174,7 @@
       }
     },false);
 
-    window.addEventListener('click',function(){
+    wf.addEventListener('click',function(){
       var video3=document.querySelector('#wf');
       if(video3.paused==true){
         video3.play();
@@ -181,7 +183,7 @@
       }
     },false);
 
-    window.addEventListener('click',function(){
+    eg.addEventListener('click',function(){
       var video4=document.querySelector('#eg');
       if(video4.paused==true){
         video4.play();
@@ -191,7 +193,7 @@
       }
     },false);
 
-    window.addEventListener('click',function(){
+    el.addEventListener('click',function(){
       var video5=document.querySelector('#el');
       if(video5.paused==true){
         video5.play();
@@ -200,7 +202,7 @@
       }
     },false);
 
-    window.addEventListener('click',function(){
+    rf.addEventListener('click',function(){
       var video6=document.querySelector('#rf');
       if(video6.paused==true){
         video6.play();
