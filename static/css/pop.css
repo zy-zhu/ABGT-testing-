@@ -15,6 +15,21 @@
 
 }
 
+.subtitlea{
+    position: fixed;
+
+    padding: 0;
+  left: 2px;
+  bottom: 3vh;
+  z-index: 9999;
+  font-family: 'Heiti SC';
+  font-style: normal;
+  font-weight: 300;
+  line-height:1vw;
+  font-size: 1vw;
+  color: white;
+}
+
 /* .vide{
     display:none;
 } */
@@ -239,4 +254,9 @@ cursor:pointer;
             transition: 0.5s;
             font-family: 'Akzidenz-Grotesk BQ';
           }
+
+          .subtitlea{font-size: 2vh;
+        width: 60vw;
+        line-height:2vh;
+    }
     }
